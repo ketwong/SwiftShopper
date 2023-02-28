@@ -48,10 +48,10 @@ struct ContentView: View {
                 .edgesIgnoringSafeArea(.all)
             Rectangle()
                 .foregroundColor(.white)
-                .frame(height: UIScreen.main.bounds.height / 2) // Set the height to half the screen
+                .frame(height: UIScreen.main.bounds.height / 3) // Set the height to half the screen
                 .opacity(0.7)
-                .blur(radius: 20)
-                .offset(y: UIScreen.main.bounds.height / 4) // Center the rectangle on the bottom half of the screen
+                .blur(radius: 0)
+                .offset(y: UIScreen.main.bounds.height / 2.5) // Center the rectangle on the bottom half of the screen
                 .alignmentGuide(.bottom) { d in d[.bottom] }
             
             VStack {
@@ -65,7 +65,7 @@ struct ContentView: View {
             .padding()
             .background(Color.white)
             .cornerRadius(10)
-            .offset(y: UIScreen.main.bounds.height / 4 + 50) // Center the text on the bottom half of the screen
+            .offset(y: UIScreen.main.bounds.height / 3.5 + 50) // Center the text on the bottom half of the screen
         }
     }
 }
